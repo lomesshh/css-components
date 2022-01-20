@@ -1,0 +1,86 @@
+html{
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.badge__component{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.badge__component > div {
+    margin: 4rem;
+    padding: 1rem;
+    width: 350px;
+    height: 50px;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+.badge__component div > span {
+    background-color: red;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+}
+
+
+.small__badge span{
+    position: absolute;
+    top: 22%;
+    right: 35%;
+    font-size: 0.8rem;
+    height: 18px;
+    width: 18px;
+}
+
+.large__badge span{
+    position: absolute;
+    top: 10%;
+    right: 25%;
+    font-size: 1.2rem;
+    height: 25px;
+    width: 25px;
+}
+
+button{
+    margin-top: 5%;
+    padding: 0.5rem 1.5rem;
+    background-color: lightgreen;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button__badge span{
+    position: absolute;
+    top: 90%;
+    left: 2%;
+    height: 22px;
+    width: 22px;
+}
+
+.icon__badge i{
+    margin-top: 5%;
+    color: lightgreen;
+}
+
+.icon__badge span{
+    position: absolute;
+    top: 97%;
+    left: 16%;
+    height: 22px;
+    width: 22px;
+}
+
+.toggle__badge span{
+    position: absolute;
+    top: 85%;
+    left: 41%;
+    height: 22px;
+    width: 22px;
+}
+
