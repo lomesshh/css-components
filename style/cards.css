@@ -64,6 +64,12 @@
     border: none;
     color: #6200EE;
     font-size:0.9rem;
+    cursor: pointer;
+}
+
+.card__footer--first button:hover{
+    text-shadow: 1px 1px 5px #6200EE;
+    transition: all 0.5s ease;
 }
 
 .card__footer--second{
@@ -78,6 +84,11 @@
 .card__icon{
     display: flex;
     justify-content: right;
+}
+
+.card__info > i:hover{
+    text-shadow: 1px 1px 2px black;
+    transition: all 0.5s ease;
 }
 
 .card__media{

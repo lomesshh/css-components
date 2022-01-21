@@ -1,0 +1,116 @@
+html{
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+}
+
+.button__all{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.button__all > button{
+    padding: 0.5rem 1rem;
+    margin: 2rem;
+    background-color: lightcoral;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.main__outer{
+    height: 80vh;
+}
+
+.first__popup{
+    /* border: 2px solid red; */
+    padding: 2rem 2rem;
+    border-radius: 20px;    
+    box-shadow: 0 10px 30px -10px rgba(0,0,0,.45);
+    background-color: whitesmoke;
+    opacity: 0;
+    z-index: 4;
+    top: 28%;
+    transition: all 0.5s ease-out;
+}
+
+.first__popup.active{
+    opacity: 1;
+}
+
+.second__popup.active{
+    opacity: 1;
+}
+
+.third__popup.active{
+    opacity: 1;
+}
+
+
+.first__popup > *,.second__popup > *,.third__popup > * {
+    margin: 0.8rem;
+}
+
+.first__popup button, .second__popup button {
+    padding: 0.5rem 1rem;
+    background-color: aquamarine;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.second__popup {
+    padding: 2rem 2rem;
+    border-radius: 20px;    
+    box-shadow: 0 10px 30px -10px rgba(0,0,0,.45);
+    background-color: whitesmoke;
+    opacity: 0;
+    z-index: 3;
+    /* overflow: auto;    */
+    width: 300px;
+    transition: all 0.5s ease-out;
+}
+
+.second__buttons--flex{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    overflow: hidden;
+    overflow-y: scroll;
+    /* overflow: visible; */
+}
+
+.second__buttons--flex h4{
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.second__popup h3{
+    position: sticky;
+}
+
+.third__popup {
+    
+    padding: 2rem 2rem;
+    border-radius: 20px;    
+    box-shadow: 0 10px 30px -10px rgba(0,0,0,.45);
+    background-color: whitesmoke;
+    opacity: 0;
+    z-index: 2;
+    /* overflow: auto;    */
+    width: 400px;
+    top: 75%;
+    transition: all 0.5s ease-out;
+}

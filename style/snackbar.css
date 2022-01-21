@@ -1,0 +1,117 @@
+html{
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.snack__notice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #584850;
+}
+
+.button__all{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.button__all > button{
+    padding: 0.5rem 1rem;
+    margin: 2rem;
+    background-color: lightcoral;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.first__snack{
+   position: absolute;
+   bottom: 0;
+   margin: 1rem;
+   border-radius: 20px;    
+   box-shadow: 0 10px 30px -10px rgba(0,0,0,.45);
+   background-color: #333;
+   color: #fff;
+   opacity: 0;
+   z-index: 4;
+   font-size: 1rem;
+   padding: 1rem;
+   border-left: 7px solid rgb(167, 23, 167);
+   transition: all 0.5s ease-out;
+}
+
+.second__snack{
+   position: absolute;
+   bottom: 0;
+   left: 35%;
+   margin: 1rem;
+   border-radius: 20px;    
+   box-shadow: 0 10px 30px -10px rgba(0,0,0,.45);
+   background-color: #333;
+   color: #fff;
+   opacity: 0;
+   z-index: 3;
+   font-size: 1rem;
+   border-left: 7px solid rgb(167, 23, 167);
+   transition: all 0.5s ease-out;
+}
+
+.third__snack{
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   margin: 1rem;
+   border-radius: 20px;    
+   box-shadow: 0 10px 30px -10px rgba(0,0,0,.45);
+   background-color: #333;
+   color: #fff;
+   opacity: 0;
+   z-index: 2;
+   font-size: 1rem;
+   border-left: 7px solid rgb(167, 23, 167);
+   transition: all 0.5s ease-out;
+}
+
+.first__snack.active, .second__snack.active, .third__snack.active {
+    opacity: 1;
+}
+
+
+.first__popup > *,.second__snack > *,.third__snack > * {
+    margin: 0.8rem;
+}
+
+.first__snack button, .second__snack button, .third__snack button {
+    padding: 0rem 0.2rem;
+    background: transparent;
+    color: white;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+.first__snack button:first-of-type, .second__snack button:first-of-type, .third__snack button:first-of-type {
+    padding: 0rem 1rem;
+    background: transparent;
+    color: violet;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+}
+
+.first__snack button:hover, .second__snack button:hover, .third__snack button:hover {
+    text-shadow: 1px 1px 6px red;
+    transition: all 0.5s ease;
+}
+
+.third__button{
+    display: flex;
+    justify-content: flex-end;
+}

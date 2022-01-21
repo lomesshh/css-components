@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/dialouge.css">
+    <link rel="stylesheet" href="../style/styles.css">
+    <title>Dialogue Component</title>
+</head>
+<body>
+    <div class="button__all">
+        <button class="first__popup_btn" onclick="openfirst()">Alert Dialogue</button>
+        <button class="second__popup_btn" onclick="opensecond()">Confirmation Dialogue</button>
+        <button class="second__popup_btn" onclick="openthird()">Basic Dialogue</button>
+    </div>
+
+    <div class="main__outer" onclick="closethird()">
+
+    <div class="first__popup center">
+        <h3>Hello Neogrammers !</h3>
+        <p>Lorem Ipsum is simply dummy text of the 
+            printing and typesetting industry.</p>
+        <button onclick="closefirst()" >Close</button>
+    </div>
+
+
+
+    <div class="second__popup center">
+        <h3>Hello Neogrammers !</h3>
+        <h3>Dont forget to practice these all things</h3>
+        <div class="second__buttons--flex">
+            <h4><input  type="radio" name="Flexbox"> Flexbox</h4>
+            <h4><input  type="radio" name="Flexbox"> Position</h4>
+            <h4><input  type="radio" name="Flexbox"> Grid</h4>
+            <h4><input  type="radio" name="Flexbox"> Responsive</h4>
+            <h4><input  type="radio" name="Flexbox"> Stacking context</h4>
+            <h4><input  type="radio" name="Flexbox"> Z-index</h4>
+            <h4><input  type="radio" name="Flexbox"> Flexbox</h4>
+        </div>
+        <button onclick="closesecond()">Close</button>
+    </div>
+
+
+    <div class="third__popup center">
+        <p>Lorem Ipsum is simply dummy text of the 
+            printing and typesetting industry.</p>
+        <p>Lorem Ipsum is simply dummy text of the 
+            printing and typesetting industry.</p>
+        <p>Lorem Ipsum is simply dummy text of the 
+            printing and typesetting industry.</p>
+    </div>
+
+</div>
+
+
+
+    <script>
+        const openfirst = () => {
+            document.getElementsByClassName("first__popup")[0].classList.add("active");
+        }
+        const closefirst = () => {
+            document.getElementsByClassName("first__popup")[0].classList.remove("active");
+        }
+
+
+        const opensecond = () => {
+            document.getElementsByClassName("second__popup")[0].classList.add("active");
+        }
+        const closesecond = () => {
+            document.getElementsByClassName("second__popup")[0].classList.remove("active");
+        }
+         
+
+        const openthird = () => {
+            document.getElementsByClassName("third__popup")[0].classList.add("active");
+        }
+        const closethird = () => {
+            document.getElementsByClassName("third__popup")[0].classList.remove("active");
+        }
+    </script>
+
+
+</body>
+</html>

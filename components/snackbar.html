@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/snackbar.css">
+    <link rel="stylesheet" href="../style/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Snackbar Component</title>
+</head>
+<body>
+    <div class="button__all">
+        <button class="first__popup_btn" onclick="openfirst()">Baseline Snackbar</button>
+        <button class="second__popup_btn" onclick="opensecond()">Leading Snackbar</button>
+        <button class="second__popup_btn" onclick="openthird()">Stacked Snackbar</button>
+    </div>
+    <div class="snack__notice">
+    <h1>Toast will fade out after 2 sec</h1>
+    </div>
+
+    <div class="first__snack ">
+        <p>Can't send photo. Retry in 5 seconds<button>RETRY</button>  <button onclick="closefirst()" ><i class="fas fa-times"></i></button></p>
+    </div>
+
+    <div class="second__snack ">
+        <p>Your photo has been archived.<button>UNDO</button>  <button onclick="closesecond()" ><i class="fas fa-times"></i></button></p>
+    </div>
+
+    <div class="third__snack ">
+        <p>This item already has the label "travel". You can add a new label.</p>
+        <div class="third__button">
+        <button>ADD A NEW LABEL</button>  <button onclick="closethird()" ><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
+    <script>
+        const openfirst = () => {
+            document.getElementsByClassName("first__snack")[0].classList.add("active");
+            setTimeout(function() {
+            document.getElementsByClassName("first__snack")[0].classList.remove("active");
+        }, 2000);
+        }
+        const closefirst = () => {
+            document.getElementsByClassName("first__snack")[0].classList.remove("active");
+        }
+
+
+        const opensecond = () => {
+            document.getElementsByClassName("second__snack")[0].classList.add("active");
+            setTimeout(function() {
+            document.getElementsByClassName("second__snack")[0].classList.remove("active");
+        }, 2000);
+        }
+        const closesecond = () => {
+            document.getElementsByClassName("second__snack")[0].classList.remove("active");
+        }
+         
+
+        const openthird = () => {
+            document.getElementsByClassName("third__snack")[0].classList.add("active");
+            setTimeout(function() {
+            document.getElementsByClassName("third__snack")[0].classList.remove("active");
+        }, 2000);
+        }
+        const closethird = () => {
+            document.getElementsByClassName("third__snack")[0].classList.remove("active");
+        }
+    </script>
+
+
+</body>
+</html>
