@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  html{
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+
+.outer__main{
+    /* margin: 10%; */
+    height: 300px;
+    overflow: hidden;
+    background-color: wheat;
+    box-shadow: 0 10px 30px -10px rgba(0,0,0,.45);
+    overflow-y: scroll;
+    border-radius: 10px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: purple;
+    height: 70px;
+    align-items: center;
+    color: white;
+    padding: 0 0.8rem;
+  }
+.menu {
+    display: flex;
+    gap: 20px;
+    font-size: 1.3rem;
+    cursor: pointer;
+  }
+h1 {
+   font-size: 1.5rem;
+  }
+.name {
+    display: flex;
+    gap: 10px;
+  }
+
+.div__info > p{
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+.div__info{
+    background-color: wheat;
+}
+
+/* fixed nav */
+ 
+ .fixed__nav{
+    position: fixed;
+    width: 100%; 
+} 
+
+/* dense header */
+
+.dense__nav{
+    position: fixed;
+    transition: all 0.2s ease-out;
+    width: 100%; 
+}
+
+.dense__nav.active{
+    opacity: 0;
+}
+
+/* short nav  */
+
+.short__nav{
+    display: flex;
+    justify-content: flex-start;
+    width: fit-content;
+    border-bottom-right-radius: 10px;
+}
+
+/* short dense */
+
+.short__dense {
+    position: fixed;
+    width: 100%; 
+
+}
+
+.short__dense.active{
+    display: flex;
+    justify-content: flex-start;
+    width: fit-content;
+    border-bottom-right-radius: 10px;
+}
+
+.info__last{
+    margin-top: 5%;
+}
+
+
+/* prominent */
+/* 
+.outer__prominent nav{
+    display: block;
+}
+
+.prominent__nav{
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+    color: white;
+    background-color: purple;
+    width: 100%;
+}
+
+.prominent__flex{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.5rem 0;
+} */
