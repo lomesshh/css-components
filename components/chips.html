@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/styles.css">
+    <link rel="stylesheet" href="../style/chips.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="chips__outer">
+        <div class="chips__store" id="chipStore">
+            <h1  id="del" >dsfvc <i class="fas fa-times" onclick="remove()"></i></h1>
+            <h1  id="del" >dsfvdzxc <i class="fas fa-times" onclick="remove()"></i></h1>
+        </div>
+        <input class="chips__input" id="chipInput" type="text" placeholder="Type your text here" >
+    </div>
+
+    <script>
+
+        function remove() {
+            var element = document.getElementById('del')
+            element.remove();
+        }
+
+        function newElement(){
+            var h1 = document.createElement('h1');
+            var inputValue = document.getElementById("chipInput").value;
+            // var icon = document.createElement('i');
+            // icon.classList.add("fas fa-times");
+            // icon.setAttribute(onclick, remove())
+            h1.appendChild(document.createTextNode(inputValue));
+            // h1.appendChild(icon);
+            // h1.append(document.createElement(`<i class="fas fa-times" onclick="remove()"></i>`));
+                if (inputValue === '') {
+                alert("You must write something!");
+                } 
+                else 
+                {
+                    document.getElementById("chipStore").appendChild(h1);
+                }
+            document.getElementById("chipInput").value = "";
+        }
+
+        document.addEventListener("keydown", function (event) 
+        {
+            if (event.keyCode === 13) {
+            newElement();
+        }
+        });
+    </script>
+</body>
+</html>

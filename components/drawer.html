@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/styles.css">
+    <link rel="stylesheet" href="../style/drawer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Drawer component</title>
+</head>
+<body>
+
+        <!-- First sidebar -->
+
+     <div class="main__grid"> 
+        
+         <div class="aside">
+            <h1>Hello Gmail</h1>
+            <p>Check Inbox</p>
+            <div class="aside__main">
+                <div class="aside__main--first">
+                    <button><i class="far fa-address-card"></i>Profile</button>
+                    <button><i class="fas fa-inbox"></i>Inbox</button>
+                    <button><i class="far fa-star"></i>Star</button>
+                    <button><i class="far fa-comment"></i>Message</button>
+                    <button><i class="far fa-paper-plane"></i>Send</button>
+                </div>
+                <div class="aside__main--second">
+                    <p>Labels</p>
+                    <button><i class="far fa-bookmark"></i>Family</button>
+                    <button><i class="far fa-bookmark"></i>Work</button>
+                    <button><i class="far fa-bookmark"></i>Friend</button>
+                    <button><i class="far fa-bookmark"></i>College</button>
+                </div>
+                <div class="aside__main--third">
+                    <p>Personal</p>
+                    <button><i class="fas fa-sliders-h"></i>Setting</button>
+                    <button><i class="far fa-bell"></i>Notification</button>
+                    <button><i class="fas fa-user-alt"></i>Profile</button>
+                    <button><i class="fas fa-cloud-download-alt"></i>Download</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="header headerOne">
+            <p>Permanent Drawer</p>
+        </div>
+
+        <div class="main">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+    </div> 
+
+
+    <!-- Second sidebar -->
+
+    <div class="second__sidebar">
+        
+        <div class="aside asideTwo" id="sidebarTwo">
+            <h1>Hello Gmail<i class="fas fas fa-window-close" onclick="hideSidebar()"></i>
+            </h1>
+            <p>Check Inbox</p>
+            <div class="aside__main">
+                <div class="aside__main--first">
+                    <button><i class="far fa-address-card"></i>Profile</button>
+                    <button><i class="fas fa-inbox"></i>Inbox</button>
+                    <button><i class="far fa-star"></i>Star</button>
+                    <button><i class="far fa-comment"></i>Message</button>
+                    <button><i class="far fa-paper-plane"></i>Send</button>
+                </div>
+                <div class="aside__main--second">
+                    <p>Labels</p>
+                    <button><i class="far fa-bookmark"></i>Family</button>
+                    <button><i class="far fa-bookmark"></i>Work</button>
+                    <button><i class="far fa-bookmark"></i>Friend</button>
+                    <button><i class="far fa-bookmark"></i>College</button>
+                </div>
+                <div class="aside__main--third">
+                    <p>Personal</p>
+                    <button><i class="fas fa-sliders-h"></i>Setting</button>
+                    <button><i class="far fa-bell"></i>Notification</button>
+                    <button><i class="fas fa-user-alt"></i>Profile</button>
+                    <button><i class="fas fa-cloud-download-alt"></i>Download</button>
+                </div>
+            </div>
+        </div>
+        <div class="header headerTwo">
+            <i class="fas fa-bars" onclick="showSidebar()"></i>
+            <p>Modal Drawer</p>
+            </div>
+        
+        <div class="main mainTwo">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+    </div>
+
+
+        <!-- Three sidebar -->
+
+        <div class="second__sidebar">
+        
+            <div class="aside asideTwo" id="sidebarThree">
+                <h1>Hello Gmail
+                </h1>
+                <p>Check Inbox</p>
+                <div class="aside__main">
+                    <div class="aside__main--first">
+                        <button><i class="far fa-address-card"></i>Profile</button>
+                        <button><i class="fas fa-inbox"></i>Inbox</button>
+                        <button><i class="far fa-star"></i>Star</button>
+                        <button><i class="far fa-comment"></i>Message</button>
+                        <button><i class="far fa-paper-plane"></i>Send</button>
+                    </div>
+                    <div class="aside__main--second">
+                        <p>Labels</p>
+                        <button><i class="far fa-bookmark"></i>Family</button>
+                        <button><i class="far fa-bookmark"></i>Work</button>
+                        <button><i class="far fa-bookmark"></i>Friend</button>
+                        <button><i class="far fa-bookmark"></i>College</button>
+                    </div>
+                    <div class="aside__main--third">
+                        <p>Personal</p>
+                        <button><i class="fas fa-sliders-h"></i>Setting</button>
+                        <button><i class="far fa-bell"></i>Notification</button>
+                        <button><i class="fas fa-user-alt"></i>Profile</button>
+                        <button><i class="fas fa-cloud-download-alt"></i>Download</button>
+                    </div>
+                </div>
+            </div>
+            <div class="main__three" id="main_three">
+            <div class="header headerTwo">
+                <i class="fas fa-bars" onclick="showSidebarThree()"></i>
+                <p>Dismissible Drawer</p>
+                </div>
+            
+            <div class="main mainTwo">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+        </div>
+        </div>
+
+
+     <script>
+        function showSidebar() {
+            document.getElementById("sidebarTwo").classList.toggle("active");
+        }
+        function hideSidebar() {
+            document.getElementById("sidebarTwo").classList.toggle("active");
+        }
+
+
+        function showSidebarThree() {
+            document.getElementById("sidebarThree").classList.toggle("active");
+            document.getElementById("main_three").classList.toggle("section__three");
+
+        }
+        </script>
+</body>
+</html> 
