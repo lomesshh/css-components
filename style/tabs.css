@@ -1,0 +1,55 @@
+html{
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+::-webkit-scrollbar{
+    height: 1px;
+    background-color: #e9f5fc;
+  }
+  
+  ::-webkit-scrollbar-thumb{
+    border-radius: 6px;
+    background: linear-gradient(#e9f5fc, #1c8ccf);
+  }
+
+.main__outer{
+    margin:15%;
+    padding: 2rem;
+    width: 70%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 40px -10px rgba(0,0,0,.45);
+
+}
+
+h1{
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.scroll__tab{
+    overflow: hidden; 
+    overflow-x: scroll;
+}
+
+.fixed__tab, .scroll__tab{
+    display: flex;
+    margin: 1rem;
+}
+
+button:focus{
+    background-color: #c6d7eb;
+    border-bottom: 4px solid rgb(36, 155, 253);
+}
+
+button{
+    padding: 0.7rem 2.5rem;
+    border: none;
+    font-size: 0.9rem;
+    border-right: 2px solid gray;
+}
+

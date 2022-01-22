@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/styles.css">
+    <link rel="stylesheet" href="../style/tabs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Tab Component</title>
+</head>
+<body>
+    <div class="main__outer">
+        <h1>Standard Tab</h1>
+        <div class="fixed__tab">
+            <button>One</button>
+            <button>Two</button>
+            <button>Three</button>
+            <button>Four</button>
+        </div>
+        <h1>Scrollable Tab ( scroll the trackball )</h1>
+        <div class="scroll__tab" id="scroll">
+            <button>One</button>
+            <button>Two</button>
+            <button>Three</button>
+            <button>Four</button>
+            <button>Five</button>
+            <button>Six</button>
+            <button>Seven</button>
+            <button>Eight</button>
+            <button>Nine</button>
+            <button>Ten</button>
+            <button>Eleven</button>
+        </div>
+    </div>
+    <script>
+        var item = document.getElementById("scroll");
+
+        window.addEventListener("wheel", function (e) {
+             if (e.deltaY > 0) item.scrollLeft += 100;
+                else item.scrollLeft -= 100;
+             });
+    </script>
+</body>
+</html>
