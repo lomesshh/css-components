@@ -11,37 +11,3 @@ html{
     background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
     height: 100%;
 }
-
-.home__grid{
-  margin: 3%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) ;
-}
-
-h1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 5rem;
-    font-size: 2.5rem;
-}
-
-.home__grid a{
-    height: 200px;
-    /* width: 200px; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    margin: 1rem;
-    text-decoration: none;
-    color: #333;
-    background-color: white;
-    border-radius: 10px;
-}
-
-.home__grid > a:hover{
-box-shadow: 0 10px 30px -10px rgba(0,0,0,.45);
-transition: all 0.3s ease-out;
-
-}
